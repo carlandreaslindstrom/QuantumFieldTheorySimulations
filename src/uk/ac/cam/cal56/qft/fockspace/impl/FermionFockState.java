@@ -30,7 +30,7 @@ public class FermionFockState extends FockState {
         return _particles.getEnergy() + _antiparticles.getEnergy();
     }
 
-    // total momentum number (sum of particle and antiparticle momenta [mod N])
+    // total momentum number
     @Override
     public int getMomentumNumber() {
         return (_particles.getMomentumNumber() + _antiparticles.getMomentumNumber()) % _N;
